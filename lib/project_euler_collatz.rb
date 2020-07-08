@@ -26,11 +26,12 @@ end
 
 def longest_collatz
   max_sequence = [1, 1]
-  (1..1000000).each do |n| 
+  (1..1000000).to_a.each do |n| 
     l = collatz(n).length
     if l > max_sequence[1] 
       max_sequence[0] = n 
       max_sequence[1] = l 
     end
   end
+  max_sequence[0]
 end
