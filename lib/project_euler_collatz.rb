@@ -33,4 +33,5 @@ def longest_collatz
       max_sequence[1] = l 
     end
   end
+  max_sequence[0]
 end
